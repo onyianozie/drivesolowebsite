@@ -13,105 +13,95 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 /* Color Palette
 #BA0621 , #0B0101, #CC1D36, #6C0918  */
 
-/* Text Style Catalog
-
-HEADER: Kanit, Bold Italic, 116.2px
-Line heigh: 7px, letter spacing: 1px
-
-Headings: (News articles, this week,  New Models, Drive in the 
-Kanit, Bold Italiic: 42px
-Line height: 43px
-
-Text Styles
-Lato, Regular: 31px
-Line height: 31.6px, Letter spacing: 0.3px*/
-
-/* Button
-
-Kanit Bold Italic: 20px
-Center, Line height: 29px*/
-
-/* Body Text
-
-Roboto, Light: 20px
-Line height: 29px*/
-
-/*  Header Navigation
-
-Catamaran, Semibold: 18px
-Right, line height: 29px*/
-
-/* Footer
-
-Roboto, Regular: 18px
-Center, Line height: 29px*/
-
 *{
     margin: 0;
     padding: 0;
+    border: #CC1D36 solid 1px;
+    
 }
+
 body{
-    font-family: 'Roboto';
-    font-weight: 'light';
-    font-size: 20px;
-    line-height: 29px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kanit';
     height: 100%;
 }
-img{
-    width: 100%;
-    max-width: 100%;
-    display: block;
-}
 .wrapper{
-    height: 1000px;
-    width:80%;
-    max-width: 1280px;
-    background-position: center;
+    width: 80%;
     margin: 0 auto;
 }
 
-.headerNav{
-    font-family: 'Catamaran';
-    font-weight: 'Semibold';
-    font-size: 18px;
-    color: white;
-}
+h2{
+    font-family: 'kanit''serif';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 43px;
 
-ul{
-    float: right;
-    list-style: none;
 }
-li{
-    float: left;
-    margin-right: 15px;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-
-Button{
-    font-family: 'kanit';
-    font-weight: 'bold italic';
+p{
+    font-family: 'roboto';
+    font-weight: lighter;
     font-size: 20px;
     line-height: 29px;
-    background-color: #BA0621;
+    padding: 20px 0;
 }
 
+button{
+    background-color:#CC1D36;
+    font-family: 'kanit''serif';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 15px 20px;
+    color: white;
 
-/* HEADER */
+}
+
+/* HEADER DESIGN */
 
 header{
     background-image: url(./image-1@2x.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    padding: 30px 0;
     
 }
-.logo, .clearfix a{
-    font-family: 'Catamaran';
-    font-weight: 'semibold';
+.headerNav{
+    font-family: 'Catamaran''serif';
     font-size: 18px;
     line-height: 29px;
+   
+    display: flex;
+    flex-direction:column;
+    align-content: space-between;
+    
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+.navBar ul{
+    display:flex;
+    justify-content: right;
+    list-style: none;
+}
+li{
+    margin-left: 10px;
+    list-style: none;
+
+}
+header p{
+    padding: 0;
+}
+.headerContent{
+   display: flex;
+   flex-direction: column;
 }
 h1{
     font-family: 'Kanit';
@@ -120,40 +110,166 @@ h1{
     line-height: 7px;
     letter-spacing: 1px;
     color: #CC1D36;
-    padding-top: 170px;
+    padding: 200px 0 10px 0;
 }
+
 h1 span{
     display: block;
     padding-top: 90px;
 }
 
-/* Gallery 1  */
-.gallery1 h2{
-    text-align: center;
-    padding-bottom: 60px;
+
+/* li{
+    margin-right: 25px;
+  
+} */
+a{
+    text-decoration: none;
+    color: white;
+    text-align: right;
+}
+/* img{
+    width: 32%;
+} */
+.thisweek{
+    margin-top: 100px;
 }
 
-/* Article */
-.carGallery img{
-    width: 32%;
-    float: left;
-    margin-right: 15px;
+.article h2{
+    text-align: center;
+    padding: 80px 0;
+    font-size: 42px;
 }
-.carGallery2{
-    float: left;
-    padding: 108px 0;
-    width: 80%;
+/* .gallery{
+    width: 100%;
+    align-items: center;
+} */
+.gallery img{
+    width: 30%; 
+    max-width: 100%;
+
 }
-.carGallery2 img{
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.thisweek{
+    display: flex;
+}
+.thisweek img{
     width: 40%;
+    justify-content: center;
 }
-.carGallerycontent{
-    float: right;
+.highlightContent{
+    width: 70%;
+    margin-left: 50px;
+
+}
+.newmodels{
+    display: flex;
+    width: 100%;
+    padding: 80px 0 0 0;
+}
+.newmodelsContent{
+    width: 50%;
+    padding: 60px 60px 60px 0;
+}
+.newmodels img{
+    width: 50%;
+}
+.driveStyle{
+    display: flex;
+    width: 100%;
+}
+/* .carContent{
+   
+  
+} */
+
+.drivestyleContent{
+    width: 50%;
+    padding: 60px 90px 60px 60px;
+}
+.newmodelsContent{
+    width: 50%;
+    padding: 60px 60px 60px 90px;
+}
+
+.driveStyle img{
+    width: 50%;
+}
+/* .features{
+    background-image: url(./oscar-aguilar-327500-unsplash@2x.png);
+
+} */
+.services{
+    background-image: url(./oscar-aguilar-327500-unsplash@2x.png);
+    background-size: contain;
+    font-size: 30px;
+}
+.iconContainer{
+    width: 100%;
+    height: 100%;
+    color: #CC1D36;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.iconCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    
+}
+
+
+.iconCard h3{
+    color: whitesmoke;
+    padding: 10px 0;
+}
+
+.contact{
+    background-color: #CC1D36;
+}
+.formContainer{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+input, .button{
+    padding: 20px;
     width: 60%;
-    display: inline-block;
+}
+.button{
+    border: none;
+    background-color: #000;
+    height: 100%;
+    margin: 0;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactbox{
+    padding-top: 20px;
+}
+
+.fotterNav ul{
+
+    text-align: right;
     
 }
-.carGallerycontent h2{
-    text-align: left;
-    
+
+
+.fotterNav li{
+    margin-bottom: 10px;
+  
 }
