@@ -16,7 +16,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *{
     margin: 0;
     padding: 0;
-    border: #CC1D36 solid 1px;
+    /* border: #CC1D36 solid 1px; */
     
 }
 
@@ -58,12 +58,14 @@ button{
     padding: 15px 20px;
     color: white;
 
+    border: none;
+
 }
 
 /* HEADER DESIGN */
 
 header{
-    background-image: url(./image-1@2x.png);
+    background-image: url(./Assets/image-1@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -92,7 +94,7 @@ header{
     list-style: none;
 }
 li{
-    margin-left: 10px;
+    margin-left: 40px;
     list-style: none;
 
 }
@@ -189,12 +191,14 @@ a{
 } */
 
 .drivestyleContent{
-    width: 50%;
-    padding: 60px 90px 60px 60px;
+    width: 48%;
+    padding: 60px 100px 00px 60px;
 }
 .newmodelsContent{
-    width: 50%;
-    padding: 60px 60px 60px 90px;
+    /* width: 50%;
+    padding: 60px 60px 0px 100px; */
+    
+    display: flex;
 }
 
 .driveStyle img{
@@ -205,7 +209,7 @@ a{
 
 } */
 .services{
-    background-image: url(./oscar-aguilar-327500-unsplash@2x.png);
+    background-image: url(./Assets/oscar-aguilar-327500-unsplash@2x.png);
     background-size: contain;
     font-size: 30px;
 }
@@ -272,4 +276,7 @@ input, .button{
 .fotterNav li{
     margin-bottom: 10px;
   
+}
+footer{
+    color:white;
 }
