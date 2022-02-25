@@ -16,7 +16,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *{
     margin: 0;
     padding: 0;
-    border: #CC1D36 solid 1px;
+    /* border: #CC1D36 solid 1px; */
     
 }
 
