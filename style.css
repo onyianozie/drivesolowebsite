@@ -16,7 +16,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *{
     margin: 0;
     padding: 0;
-    /* border: #CC1D36 solid 1px; */
+    border: #CC1D36 solid 1px;
     
 }
 
@@ -108,7 +108,7 @@ header p{
 h1{
     font-family: 'Kanit';
     font-weight: 'bold italic';
-    font-size: 116.2px;
+    font-size: 116px;
     line-height: 7px;
     letter-spacing: 1px;
     color: #CC1D36;
@@ -159,7 +159,9 @@ a{
 }
 .thisweek{
     display: flex;
+    
 }
+
 .thisweek img{
     width: 40%;
     justify-content: center;
@@ -167,6 +169,7 @@ a{
 .highlightContent{
     width: 70%;
     margin-left: 50px;
+    margin-top: 20px;
 
 }
 .newmodels{
@@ -174,10 +177,7 @@ a{
     width: 100%;
     padding: 80px 0 0 0;
 }
-.newmodelsContent{
-    width: 50%;
-    padding: 60px 60px 60px 0;
-}
+
 .newmodels img{
     width: 50%;
 }
@@ -185,10 +185,10 @@ a{
     display: flex;
     width: 100%;
 }
-/* .carContent{
+.carContent{
    
-  
-} */
+  align-content: center;
+}
 
 .drivestyleContent{
     width: 48%;
@@ -231,6 +231,7 @@ a{
 .iconCard h3{
     color: whitesmoke;
     padding: 10px 0;
+    font-size: 30px;
 }
 
 .contact{
@@ -243,6 +244,7 @@ a{
 
     display: flex;
     justify-content: space-between;
+    gap:40px;
 }
 
 input, .button{
@@ -263,7 +265,10 @@ input, .button{
 .contactbox{
     padding-top: 20px;
 }
-
+.fotterNav{
+    display: flex;
+    justify-content: space-between;
+}
 .fotterNav ul{
 
     text-align: right;
@@ -278,3 +283,104 @@ input, .button{
 footer{
     color:white;
 }
+
+
+@media (max-width: 940px){
+    .thisweek{
+        flex-direction: column;
+    }
+    .thisweek img{
+        width: 100%;
+    
+    }
+
+    .highlightContent{
+        width: 100%;
+        margin-left: 0px;
+    
+    }
+    .newmodels{
+        flex-direction: column-reverse;
+    }
+    .newmodelsContent{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .newmodels img {
+        width: 100%;
+ 
+    }
+    .driveStyle{
+        flex-direction: column;
+    }
+    .drivestyleContent{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .driveStyle img{
+        width: 100%;
+   
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 18px;
+    }
+
+    input{
+        margin: 30px 0;
+    }
+
+   
+}
+@media (max-width: 768px){
+
+    .navBar ul{
+        display: none;
+    }
+
+    .iconContainer{
+        flex-direction: column;
+    }
+
+    .formContainer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contactInfo{
+        text-align: left;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    .iconCard h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 18px;
+    }
+
+    .carContent{
+        text-align: center;
+    }
+}
+@media (max-width: 480px){
+  
+    h1{
+        font-size: 80px;
+    }
+
+    .navBar h2{
+        font-size: 25px;
+    }
+
+
+}
+
